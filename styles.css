@@ -1,0 +1,41 @@
+/* removes margin from page and centers the container div */
+body, html {
+    margin: 0;
+    height: 100%;
+    display: grid;
+  }
+
+/* creates a css grid of 16 square divs */
+#container {
+    display: grid;
+    grid-template-columns: repeat(15, auto); 
+    grid-template-rows: repeat(15, auto);
+    width: 600px;
+    height: 600px;
+    margin: auto;
+}
+
+
+/* styling for div when its been hovered over */
+.active {
+    background-color: gray;
+}
+
+/* styling for clear button */
+.reset {
+    width: 75px;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+/* styling for error message */
+.error {
+    margin: auto;
+    padding: 10px 0px;
+    color: red;
+    display: none;
+}
+
+.error-active {
+    display: inline;
+}
